@@ -24,8 +24,8 @@ class APIController {
 
         foreach($idServicios as $idServicio) {
             $args = [
-                'citaid' => $id,
-                'servicioid' => $idServicio
+                'citaId' => $id,
+                'servicioId' => $idServicio
             ];
             $citaServicio = new CitaServicio($args);
             $citaServicio->guardar();
