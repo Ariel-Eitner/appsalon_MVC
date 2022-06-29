@@ -5,13 +5,13 @@ class CitaServicio extends ActiveRecord {
     protected static $columnasDB = ['id', 'citaId', 'servicioId'];
 
     public $id;
-    public $citaid;
-    public $servicioid;
+    public $citaId;
+    public $servicioId;
 
     public function __construct($args = [])
     {
         $this->id = $args['id'] ?? null;
-        $this->citaid = $args['citaId'] ?? '';
-        $this->servicioid = $args['servicioId'] ?? '';
+        $this->citaId = $args['citaId'] ?? '';
+        $this->servicioId = $args['servicioId'] ?? '';
     }
 }
